@@ -63,7 +63,7 @@ O Cortex será responsável por rodar os "Analyzers" e "Responders" (analisadore
 
      ![1](imagens/1.png)
 
-     ![Cortex Users](imagens/2.png)
+     ![2](imagens/2.png)
      
 5. **Criar Usuário da Organização:**
    * Entre na organização criada.
@@ -71,6 +71,11 @@ O Cortex será responsável por rodar os "Analyzers" e "Responders" (analisadore
    * Preencha os dados (ex: Login: `automatização`, Nome: `automatização`).
    * Em Roles, selecione `read, analyze`.
    * Clique em **Save user**.
+  
+      ![2](imagens/3.png)
+     
+      ![2](imagens/api.png)
+     
 6. **Gerar a API Key (Muito Importante):**
    * Na lista de usuários, na linha do usuário recém-criado, clique em **Create API Key**.
    * Clique no botão azul **Reveal** para exibir a chave.
