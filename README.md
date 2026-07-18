@@ -10,8 +10,9 @@ Esta documentação assume que você utilizará o Docker Compose para subir os s
 
 ## Pré-requisitos e Subida dos Contêineres (Docker)
 
-Antes de acessar as interfaces gráficas, é necessário subir a infraestrutura.
+Antes de acessar as interfaces gráficas, é necessário subir a infraestrutura completa (TheHive, Cortex e MISP).
 
+### 1. Subindo TheHive e Cortex
 1. Tenha o projeto base clonado e o arquivo `docker-compose.yml` configurado em sua máquina:
    ```bash
    git clone https://github.com/nks1097/DOCKER-THE_HIVE_5.2_community_CORTEX_MISP_LAB.git
@@ -22,6 +23,28 @@ Antes de acessar as interfaces gráficas, é necessário subir a infraestrutura.
    ```bash
    sudo docker-compose up -d
    ```
+
+### 2. Subindo o MISP
+Para o MISP, utilizaremos o repositório oficial do Docker do MISP. Em uma pasta separada, execute:
+1. Clone o repositório e prepare o ambiente:
+   ```bash
+   git clone https://github.com/MISP/misp-docker.git
+   cd misp-docker
+   cp template.env .env
+   ```
+2. Edite o arquivo `.env` ajustando a variável `BASE_URL` para o IP da sua máquina:
+   ```env
+   ADMIN_EMAIL=admin@admin.test
+   ADMIN_PASSWORD=admin
+   BASE_URL=https://<SEU_IP>
+   TZ=America/Sao_Paulo
+   ```
+3. Suba os contêineres do MISP:
+   ```bash
+   sudo docker-compose pull
+   sudo docker-compose up -d
+   ```
+
 4. Aguarde alguns minutos para que todos os serviços (Elasticsearch, Cassandra, Cortex, MISP, TheHive) iniciem completamente.
 
 ---
