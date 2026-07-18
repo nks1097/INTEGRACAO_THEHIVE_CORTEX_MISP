@@ -61,7 +61,7 @@ O Cortex será responsável por rodar os "Analyzers" e "Responders" (analisadore
    * Nome: `AUTOMATIZAÇÃO` (conforme imagem).
    * Clique em **Save**.
 
-     ![](imagens/1.png)
+     ![1](imagens/1.png)
 
      ![Cortex Users](imagens/2.png)
      
