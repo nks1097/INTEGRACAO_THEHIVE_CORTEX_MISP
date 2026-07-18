@@ -71,6 +71,8 @@ O Cortex será responsável por rodar os "Analyzers" e "Responders" (analisadore
    * Clique no botão azul **Reveal** para exibir a chave.
    * Copie e salve esta chave em um bloco de notas. Ela será usada na integração com o TheHive.
 
+![Cortex Users](imagens/cortex-users.png)
+
 ---
 
 ## Passo 2: Configuração Inicial do MISP
@@ -87,18 +89,26 @@ O MISP será nossa plataforma de compartilhamento de inteligência contra ameaç
    * Marque a caixa **Local organisation**.
    * Nome (Identifier): `automatização` (conforme imagem).
    * Clique em **Submit**.
+
+![MISP Menu Add Organisation](imagens/misp-menu-add-organisation.png)
+![MISP Add Org Form](imagens/misp-add-org-form.png)
 5. **Criar Usuário:**
    * Vá em **Administration -> Add User**.
    * Email: `natanael1097@admin.test` (conforme imagem).
    * Organização: Escolha a organização `automatização` que você acabou de criar.
    * Role: `Org Admin`.
    * Defina a senha e clique em **Create user**.
+
+![MISP Users Index](imagens/misp-users-index.png)
 6. **Gerar a API Key (Auth Key):**
    * Vá em **Administration -> List Users**.
    * Clique no ID ou email do usuário recém-criado (`natanael1097@admin.test`).
    * Role a página até a seção **Auth keys** e clique em **+ Add authentication key**.
    * Adicione um comentário para identificar e clique em **Submit**.
    * Uma janela aparecerá com a chave (ex: `t7K923sTTyQR4...`). Copie e salve no seu bloco de notas.
+
+![MISP User Profile Auth Key](imagens/misp-user-profile-auth-key.png)
+![MISP Generate Auth Key](imagens/misp-generate-auth-key.png)
 
 ---
 
@@ -114,12 +124,16 @@ O TheHive será o orquestrador principal de incidentes e consumirá os dados do 
    * No menu à esquerda, vá em **Administration -> Organisations** e clique no botão **+ (Add Organisation)**.
    * Nome: `automatização`.
    * Confirme a criação.
+
+![TheHive Add Organization](imagens/thehive-add-organization.png)
 4. **Criar Usuário para a Organização:**
    * Vá em **Administration -> Users** e clique no botão **+**.
    * Login: `natanael` / Nome: `natanael`.
    * Organização: Vincule-o à organização `automatização` criada no passo anterior.
    * Perfil (Role): `org-admin`.
    * Confirme e crie uma senha para este usuário.
+
+![TheHive Add User](imagens/thehive-add-user.png)
 
 ### Realizando a Integração (Plataform Management)
 
