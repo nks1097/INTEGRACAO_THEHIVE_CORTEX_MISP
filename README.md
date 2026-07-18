@@ -74,14 +74,12 @@ O Cortex será responsável por rodar os "Analyzers" e "Responders" (analisadore
   
       ![2](imagens/3.png)
      
-      ![2](imagens/api.png)
-     
 6. **Gerar a API Key (Muito Importante):**
    * Na lista de usuários, na linha do usuário recém-criado, clique em **Create API Key**.
    * Clique no botão azul **Reveal** para exibir a chave.
    * Copie e salve esta chave em um bloco de notas. Ela será usada na integração com o TheHive.
 
-![Cortex Users](imagens/cortex-users.png)
+      ![2](imagens/api.png)
 
 ---
 
