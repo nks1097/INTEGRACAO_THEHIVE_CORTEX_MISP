@@ -144,19 +144,20 @@ O TheHive será o orquestrador principal de incidentes e consumirá os dados do 
    * Usuário: `admin@thehive.local`
    * Senha: `secret`
 3. **Criar Organização:**
-   * No menu à esquerda, vá em **Administration -> Organisations** e clique no botão **+ (Add Organisation)**.
-   * Nome: `automatização`.
+   * No menu à esquerda, vá em **-> Organizaçoes** e clique no botão **+ (Adicionar uma organizaçao)**.
+   * Nome: `natanael`.
    * Confirme a criação.
 
-![TheHive Add Organization](imagens/thehive-add-organization.png)
+     ![2](imagens/5.png)
+
 4. **Criar Usuário para a Organização:**
-   * Vá em **Administration -> Users** e clique no botão **+**.
-   * Login: `natanael` / Nome: `natanael`.
-   * Organização: Vincule-o à organização `automatização` criada no passo anterior.
+   * Vá em **Users** e clique no botão **+**.
+   * Login: `nks1097@local.com` / Nome: `natanael`.
+   * Organização: Vincule-o à organização `natanael` criada no passo anterior.
    * Perfil (Role): `org-admin`.
    * Confirme e crie uma senha para este usuário.
 
-![TheHive Add User](imagens/thehive-add-user.png)
+    ![2](imagens/6.png)
 
 ### Realizando a Integração (Plataform Management)
 
@@ -174,12 +175,14 @@ Ainda logado como Super Admin no TheHive, vamos conectar as plataformas:
    * Chave API: Cole a Auth Key gerada no Passo 2 do MISP.
    * Objetivo: Importação e exportação.
    * Definições SSL: Desative a opção "Verificar a autoridade de certificação" (para evitar erros com o certificado autoassinado do Docker).
-4. Clique em **Adicione/Atualização**.
+4. Clique em **Adicione/Confirme**.
+
+     ![2](imagens/14.png)
 
 #### B. Integrando o Cortex:
 
 1. Vá na aba superior **Cortex**.
-2. Clique no ícone de **+** na seção "Servidores".
+2. Clique no ícone de **cortex0** na seção "Servidores".
 3. Preencha o formulário:
    * Nome do servidor: `cortex0`
    * Url do servidor: `http://<SEU_IP>:9001/` (ex: `http://192.168.0.107:9001/`)
@@ -187,11 +190,19 @@ Ainda logado como Super Admin no TheHive, vamos conectar as plataformas:
    * Definições SSL: Desative a opção de verificação de certificado, se estiver ativa.
 4. Clique em **Adicione/Atualização**.
 
+    ![2](imagens/15.png)
+
+
 ### Validação da Integração
 
 Vá para a aba **Licença** (ou Status) dentro da Gestão de plataforma. Você deverá ver as métricas confirmando a comunicação:
 
+  ![2](imagens/18.png)
+
 * Servidores MISP: 1 / 1
 * Servidores Cortex: 1 / 1
+
+  ![2](imagens/19.png)
+  
 
 **Sucesso!** O ecossistema está integrado. A partir de agora, quando você criar um caso no TheHive, ele poderá acionar os analisadores do Cortex automaticamente e importar/exportar eventos de Threat Intelligence diretamente do MISP.
