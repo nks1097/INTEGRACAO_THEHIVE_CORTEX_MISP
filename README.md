@@ -4,7 +4,7 @@ Com base no vídeo explicativo e nas imagens de apoio fornecidas, elaborei uma d
 
 Esta documentação assume que você utilizará o Docker Compose para subir os serviços e usa como base o nosso projeto [DOCKER-THE_HIVE_5.2_community_CORTEX_MISP_LAB](https://github.com/nks1097/DOCKER-THE_HIVE_5.2_community_CORTEX_MISP_LAB).
 
-> **Vídeo de Referência:** [INSERIR LINK DO VÍDEO AQUI]
+> **Vídeo de Referência:** [https://www.youtube.com/watch?v=uSKdHr27Qf4&list=PL2AyoF9FDA2U0nJXK4lg_8wkfMlFaV05n&index=14]
 
 ---
 
