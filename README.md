@@ -60,6 +60,11 @@ O Cortex será responsável por rodar os "Analyzers" e "Responders" (analisadore
    * Vá em **Organizations** e clique em **+ Add organization**.
    * Nome: `AUTOMATIZAÇÃO` (conforme imagem).
    * Clique em **Save**.
+
+     ![Cortex Users](imagens/1.png)
+
+     ![Cortex Users](imagens/2.png)
+     
 5. **Criar Usuário da Organização:**
    * Entre na organização criada.
    * Vá na aba **Users** e clique em **+ Add user**.
