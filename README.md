@@ -94,12 +94,16 @@ O MISP será nossa plataforma de compartilhamento de inteligência contra ameaç
 3. **Troca de Senha:** O sistema exigirá a troca imediata da senha. A nova senha deve ser complexa (letras maiúsculas, minúsculas, números e caracteres especiais).
 4. **Criar Organização:**
    * No menu superior, vá em **Administration -> Add Organisations**.
+
+      ![2](imagens/7.png)
+
    * Marque a caixa **Local organisation**.
+
+      ![2](imagens/8.png)
+
    * Nome (Identifier): `automatização` (conforme imagem).
    * Clique em **Submit**.
 
-![MISP Menu Add Organisation](imagens/misp-menu-add-organisation.png)
-![MISP Add Org Form](imagens/misp-add-org-form.png)
 5. **Criar Usuário:**
    * Vá em **Administration -> Add User**.
    * Email: `natanael1097@admin.test` (conforme imagem).
@@ -107,16 +111,27 @@ O MISP será nossa plataforma de compartilhamento de inteligência contra ameaç
    * Role: `Org Admin`.
    * Defina a senha e clique em **Create user**.
 
-![MISP Users Index](imagens/misp-users-index.png)
+     ![2](imagens/User.png)
+ 
 6. **Gerar a API Key (Auth Key):**
    * Vá em **Administration -> List Users**.
    * Clique no ID ou email do usuário recém-criado (`natanael1097@admin.test`).
-   * Role a página até a seção **Auth keys** e clique em **+ Add authentication key**.
-   * Adicione um comentário para identificar e clique em **Submit**.
-   * Uma janela aparecerá com a chave (ex: `t7K923sTTyQR4...`). Copie e salve no seu bloco de notas.
 
-![MISP User Profile Auth Key](imagens/misp-user-profile-auth-key.png)
-![MISP Generate Auth Key](imagens/misp-generate-auth-key.png)
+      ![2](imagens/10.png)
+     
+   * Role a página até a seção **Auth keys** e clique em **+ Add authentication key**.
+
+     ![2](imagens/11.png)
+
+   * Adicione um comentário para identificar e clique em **Submit**.
+  
+     ![2](imagens/12.png)
+     
+   * Uma janela aparecerá com a chave (ex: `t7K923sTTyQR4...`). Copie e salve no seu bloco de notas.
+  
+     ![2](imagens/13.png)
+
+     
 
 ---
 
